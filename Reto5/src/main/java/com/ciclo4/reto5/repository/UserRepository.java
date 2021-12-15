@@ -50,7 +50,7 @@ public class UserRepository {
         return userCrudRepository.findTopByOrderByIdDesc();
     }
     
-    public Optional<User> getMothBirthday(String mesCumpleaños){
+    public List<User> getMothBirthday(String mesCumpleaños){
         return userCrudRepository.findByMonthBirthtDay(mesCumpleaños);
     }
 }

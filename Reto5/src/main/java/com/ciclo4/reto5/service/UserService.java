@@ -154,7 +154,7 @@ public class UserService {
         return user.get();
     }
     
-    public Optional<User> getByMothBirthday(String mesCumpleaños){
+    public List<User> getByMothBirthday(String mesCumpleaños){
         
         return userRepository.getMothBirthday(mesCumpleaños);
     }
